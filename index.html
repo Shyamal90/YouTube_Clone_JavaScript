@@ -5,12 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <nav id="navbar">
-            <input type="text" placeholder="Search" id="searchEl">
-            <button onclick="getYouTubeData()">Search</button>
+            <!-- <input type="text" placeholder="Search" id="searchEl">
+            <button onclick="getYouTubeData()">Search</button> -->
+            <div class="nav_container">
+                <!-- Left div - logo section -->
+                <div class="left_box">
+                    <!-- Three dots Extension -->
+                    <div class="extension">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <!-- Logo Div -->
+                    <div class="logo_container">
+                        <img src="img/logo.PNG" alt="logo" id="youtubeLogo">
+                    </div>
+                </div>
+
+                <!-- Search Box Section -->
+                <div class="search_box_container">
+                    <!-- search box -->
+                    <div class="search_box">
+                        <input type="text" placeholder="Search" id="searchEl">
+                        <button id="search_btn" onclick="getYouTubeData()"><img src="img/search.PNG" alt="search_logo" id="searchLogo"></button>
+                        
+                    </div>
+                </div>
+
+                <!-- Right Div Box -->
+                <div class="right_box">
+
+                    <div class="user_options">
+                        <img src="img/video.PNG" alt="videologo">
+                    </div>
+
+                    <div class="user_options">
+                        <img src="img/grid.PNG" alt="gridLogo">
+                    </div>
+
+                    <div class="user_options">
+                        <img src="img/bell.PNG" alt="bellLogo">
+                    </div>
+
+                    <div class="user_options" id="profile_div">
+                        <img src="img/profile-pic.jpg" alt="profile_pic" id="profile_pic">
+                    </div>
+                </div>
+
+            </div>
         </nav>
 
         <div class="searchResult">
